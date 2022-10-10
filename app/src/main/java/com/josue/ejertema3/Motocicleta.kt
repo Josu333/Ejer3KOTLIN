@@ -12,5 +12,10 @@ class Motocicleta(marca:String, modelo:String,color:String, nPlazas:Int, maleter
         this.nPlazas=nPlazas
         this.maletero=maletero
     }
+    override fun mostarVehiculo(){
+        super.mostarVehiculo()
+        println("Nº plazas: $nPlazas")
+        println("Maletero: $maletero")
+    }
 
 }

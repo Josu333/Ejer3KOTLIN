@@ -12,4 +12,10 @@ class Coche(marca:String,modelo:String,color:String, nPuertas:Int, nPlazas:Int):
         this.nPlazas=nPlazas
     }
 
+    override fun mostarVehiculo() {
+        super.mostarVehiculo()
+        println("Nº puertas: "+nPuertas)
+        println("Nº plazas: $nPlazas")
+    }
+
 }

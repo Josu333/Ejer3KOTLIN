@@ -3,7 +3,7 @@ package com.josue.ejertema3
 open class Vehiculo2 (marca:String, modelo:String, color:String) {
     var marca:String =marca
         set(value){
-            field=if(marca.isEmpty())"Empty" else value
+            field=if (value.isEmpty()) "indefinida" else value
         }
         get() {
             return "La marca es "+field
@@ -11,7 +11,7 @@ open class Vehiculo2 (marca:String, modelo:String, color:String) {
 
     var modelo:String=modelo
         set(value){
-            field=if(modelo.isEmpty()) "Empty" else value
+            field=if(value.isEmpty()) "indefinido" else value
         }
         get() {
             return "El modelo es $field"
@@ -19,7 +19,7 @@ open class Vehiculo2 (marca:String, modelo:String, color:String) {
 
     var color:String=color
         set(value){
-            field=if(color.isEmpty()) "Empty" else value
+            field=if(value.isEmpty()) "indefinido" else value
         }
         get(){
             return "El color es $field"
@@ -29,5 +29,10 @@ open class Vehiculo2 (marca:String, modelo:String, color:String) {
         this.marca=marca
         this.modelo=modelo
         this.color=color
+    }
+    open fun mostarVehiculo(){
+        println(marca)
+        println(modelo)
+        println(color)
     }
 }

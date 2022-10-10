@@ -3,7 +3,7 @@ package com.josue.ejertema3
  class Vehiculo() {
     var marca: String = ""
         set(value) {
-            field = if (value.isEmpty()) "Empty" else value
+            field = if (value.isEmpty()) "Vacio" else value
         }
         get() {
             return "La marca es $field"

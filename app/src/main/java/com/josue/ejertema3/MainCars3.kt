@@ -8,21 +8,13 @@ fun main(){
 
     var listaMotos = mutableListOf<Motocicleta>(moto1,moto2)
     var listaCoches = mutableListOf<Coche>(coche1,coche2)
-    var listaFinal = Pair (listaCoches,listaMotos)
 
-    for (item in listaFinal.first){
-        println(item.marca)
-        println(item.modelo)
-        println(item.color)
-        println("Nº puertas: "+item.nPuertas)
-        println("Nº plazas: "+item.nPlazas)
+
+    for (item in listaCoches){
+        item.mostarVehiculo()
     }
-    for (item in listaFinal.second){
-        println(item.marca)
-        println(item.modelo)
-        println(item.color)
-        println("Nº plazas: "+item.nPlazas)
-        println("Con maletero: "+item.maletero)
+    for (item in listaMotos){
+        item.mostarVehiculo()
     }
 
 
